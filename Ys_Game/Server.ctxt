@@ -10,4 +10,6 @@ comment3.params=
 comment3.target=Server\ getServer()
 comment4.params=_trainer
 comment4.target=void\ introduce(Trainer)
-numComments=5
+comment5.params=
+comment5.target=void\ showLobby()
+numComments=6

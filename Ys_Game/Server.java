@@ -38,5 +38,15 @@ public class Server
         
      System.out.println(_trainer.name + " has joined the server");   
     }
+    
+    public void showLobby() {
+        
+        System.out.println("In Lobby: ");
+        
+        for (Trainer trainer : trainers) {
+            
+         System.out.println(trainer.name);
+        }
+    }
 
 }

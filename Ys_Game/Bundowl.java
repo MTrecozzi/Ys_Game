@@ -17,7 +17,14 @@ public class Bundowl extends Ystav
         // initialise instance variables
         super();
         name = "Bundowl";
-        
+        types.add("Ice");
+        types.add("Flying");
+        hp = 120;
+        atk = 45;
+        spAtk = 45;
+        def = 95;
+        spDef = 95;
+        speed = 35; 
         
     }
 

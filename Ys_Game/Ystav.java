@@ -1,4 +1,4 @@
-
+import java.util.ArrayList;
 /**
  * Write a description of class Ystav here.
  *
@@ -9,6 +9,7 @@ public class Ystav
 {
     // instance variables - replace the example below with your own
     public String name;
+    public ArrayList<String> types = new ArrayList<>();
     
     int hp;
     int atk;
