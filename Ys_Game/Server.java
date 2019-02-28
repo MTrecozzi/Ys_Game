@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 /**
  * Write a description of class Game here.
  *
@@ -36,7 +37,7 @@ public class Server
     
     public void introduce(Trainer _trainer) {
         
-     System.out.println(_trainer.name + " has joined the server");   
+     System.out.println("Trainer " + _trainer.name + " has joined the server");   
     }
     
     public void showLobby() {
@@ -47,6 +48,46 @@ public class Server
             
          System.out.println(trainer.name);
         }
+    }
+    
+    public void displayChallenge(Trainer from, String to) {
+        
+        Trainer t1 = from;
+        Trainer t2 = getTrainer(to);
+        
+        System.out.println(to + ", " + from.name + " has challenged you to battle, do you accept?");
+        Scanner keyboard = new Scanner(System.in);
+        
+        String answer = keyboard.nextLine();
+        
+        if (answer.toLowerCase().equals("yes")) {
+            
+            startBattle(t1, t2);
+            
+        }
+        
+        
+        
+    }
+    
+    public Trainer getTrainer(String _name) {
+        
+        for (Trainer trainer : trainers) {
+            
+         if (trainer.name.equals( _name)) {
+             return trainer;
+            }
+            
+        }
+        
+        System.out.println("No Trainer with that name found");
+        return null;
+    }
+    
+    public void startBattle(Trainer t1, Trainer t2) {
+        
+        System.out.println("The Battle between " + t1.name + " and " + t2.name + " has begun!");
+        
     }
 
 }

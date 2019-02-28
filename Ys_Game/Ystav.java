@@ -10,6 +10,7 @@ public class Ystav
     // instance variables - replace the example below with your own
     public String name;
     public ArrayList<String> types = new ArrayList<>();
+    public ArrayList<Move> moves = new ArrayList<>();
     
     int hp;
     int atk;
@@ -31,6 +32,8 @@ public class Ystav
         def = 10;
         spDef = 10;
         speed = 10;
+        
+        moves.add(new Flurry());
 
     }
     

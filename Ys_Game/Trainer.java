@@ -40,6 +40,11 @@ public class Trainer
         server.introduce(this);
     }
     
+    public void challenge(String _toChallenge) {
+        
+        server.displayChallenge(this, _toChallenge);
+    }
+    
     public void listPary(){
         
         int i = 1;
