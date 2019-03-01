@@ -1,9 +1,13 @@
 #BlueJ class context
 comment0.target=Move
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Move\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-comment1.params=
-comment1.target=Move()
+comment1.params=_name\ _type
+comment1.target=Move(java.lang.String,\ java.lang.String)
 comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ Move\r\n
-comment2.params=_target
-comment2.target=void\ target(Ystav)
-numComments=3
+comment2.params=
+comment2.target=Move()
+comment3.params=_target
+comment3.target=void\ target(Ystav)
+comment4.params=
+comment4.target=java.lang.String\ getName()
+numComments=5

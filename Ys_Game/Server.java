@@ -11,6 +11,7 @@ public class Server
     // instance variables - replace the example below with your own
     public static Server server;
     public ArrayList<Trainer> trainers = new ArrayList<>();
+    public ArrayList<Battle> activeBattles = new ArrayList<>();
 
     /**
      * Constructor for objects of class Game
@@ -87,7 +88,7 @@ public class Server
     public void startBattle(Trainer t1, Trainer t2) {
         
         System.out.println("The Battle between " + t1.name + " and " + t2.name + " has begun!");
-        
+        activeBattles.add( new Battle(t1, t2));
     }
 
 }

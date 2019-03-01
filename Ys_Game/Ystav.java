@@ -43,6 +43,11 @@ public class Ystav
      return this.name;   
         
     }
+    
+    public ArrayList<Move> getMoves(){
+        
+        return this.moves;
+    }
 
 
 }

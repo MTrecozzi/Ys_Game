@@ -16,15 +16,24 @@ public class Move
     /**
      * Constructor for objects of class Move
      */
-    public Move()
+    public Move(String _name, String _type)
     {
-        // initialise instance variables
+        this.name = _name;
+        this.type = _type;
       
+    }
+    
+    public Move() {
+        
     }
     
     public void target(Ystav _target) {
         
         
+    }
+    
+    public String getName(){
+        return this.name;
     }
 
 

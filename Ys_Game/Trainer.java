@@ -29,15 +29,26 @@ public class Trainer
         
         connectToServer();
         
-        party.add(new Bundowl());
+        addToParty(new Bundowl());
         
         
+    }
+    
+    public void addToParty(Ystav _ystav) {
+        party.add(_ystav);   
     }
     
     public void connectToServer(){
         server = Server.getServer();  
         server.addTrainer(this);
         server.introduce(this);
+    }
+    
+
+    
+    public String getName() {
+     return this.name;
+        
     }
     
     public void challenge(String _toChallenge) {
@@ -48,6 +59,8 @@ public class Trainer
     public void listPary(){
         
         int i = 1;
+        
+        System.out.println(this.getName() + "'s Party: ");
         
         for (Ystav y : party){
             
