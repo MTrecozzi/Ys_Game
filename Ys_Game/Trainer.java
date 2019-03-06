@@ -19,13 +19,12 @@ public class Trainer
     /**
      * Constructor for objects of class Trainer
      */
-    public Trainer()
+    public Trainer(String _name)
     {
-          
-        Scanner keyboard = new Scanner(System.in);
-        
-        System.out.println("Please enter your name:");
-        this.name = keyboard.nextLine();
+        // Scanner keyboard = new Scanner(System.in);
+        // System.out.println("Please enter your name:");
+        // this.name = keyboard.nextLine();   
+        this.name = _name;
         
         connectToServer();
         
@@ -56,20 +55,33 @@ public class Trainer
         server.displayChallenge(this, _toChallenge);
     }
     
-    public void listPary(){
+    public void listPartyNumbered(){  
+         int i = 1;
+         System.out.println(this.getName() + "'s Party: ");
+        
+         for (Ystav y : party){
+            
+             System.out.println("#" + i + ": " + y.getName());
+             i++;
+            
+         }
+        
+     }
+    
+     // Using Lambda's
+    public void listParty() {
         
         int i = 1;
-        
         System.out.println(this.getName() + "'s Party: ");
         
-        for (Ystav y : party){
-            
-            System.out.println("#" + i + ": " + y.getName());
-            i++;
-            
-        }
+        party.forEach(
+            (partyMember) -> {
+                System.out.println(partyMember.getName());
+            }
+        );
         
     }
+    
 
 
 }
