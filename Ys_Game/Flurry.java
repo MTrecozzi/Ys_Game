@@ -22,7 +22,7 @@ public class Flurry extends Move
     }
     
     public void target(Ystav target) {
-        target.speed -= 2;
+        target.speed -= target.speed / 2;
     }
 
 }

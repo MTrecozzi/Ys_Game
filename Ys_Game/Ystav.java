@@ -8,10 +8,12 @@ import java.util.ArrayList;
 public class Ystav
 {
     // instance variables - replace the example below with your own
-    public String name;
-    public ArrayList<String> types = new ArrayList<>();
-    public ArrayList<Move> moves = new ArrayList<>();
-    
+    public String name; // Name of Species
+    public ArrayList<String> types = new ArrayList<>(); // Array List of Types
+    public Ability ability; // Passive Ability
+    public ArrayList<Move> moves = new ArrayList<>(); // List of Moves
+
+    // Base Stats
     int hp;
     int atk;
     int spAtk;

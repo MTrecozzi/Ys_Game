@@ -19,12 +19,27 @@ public class Battle
         // initialise instance variables
         this.t1 = _t1;
         this.t2 = _t2;
+        
+        BattleManagement();
        
     }
     
     public void BattleManagement() {
         
-        System.out.println("The Battle has Begun!");   
+        System.out.println("The Battle between " + t1.name + " and " + t2.name + " has begun!");
+        showParties();
+        
+    }
+    
+    void showParties(){
+     
+        System.out.println(t1.name + "'s Party:");  
+        t1.party.stream().map(pMember -> pMember.getName()).forEach(System.out :: println);
+        System.out.println();
+        
+        System.out.println(t2.name + "'s Party:");
+        t2.party.stream().map(pMember -> pMember.getName()).forEach(System.out :: println);
+        System.out.println();
         
     }
     

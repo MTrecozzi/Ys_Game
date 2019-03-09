@@ -87,7 +87,7 @@ public class Server
     
     public void startBattle(Trainer t1, Trainer t2) {
         
-        System.out.println("The Battle between " + t1.name + " and " + t2.name + " has begun!");
+        
         activeBattles.add( new Battle(t1, t2));
     }
 

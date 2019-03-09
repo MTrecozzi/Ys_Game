@@ -71,15 +71,19 @@ public class Trainer
      // Using Lambda's
     public void listParty() {
         
-        int i = 1;
         System.out.println(this.getName() + "'s Party: ");
         
         party.forEach(
+            // (Ystav partymember) type not needed
             (partyMember) -> {
                 System.out.println(partyMember.getName());
             }
         );
         
+        // Or 
+        // party.forEach(partyMember -> System.out.println(partyMember.getName()));
+        // if there is only one parameter () may be omitted
+        // if there is only one statement, brackets may be ommitted.
     }
     
 
