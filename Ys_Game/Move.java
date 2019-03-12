@@ -10,6 +10,7 @@ public class Move
     // instance variables - replace the example below with your own
     String name;
     String type;
+    String category;
     
     String desc;
 

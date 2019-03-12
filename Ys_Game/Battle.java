@@ -10,6 +10,7 @@ public class Battle
     // instance variables - replace the example below with your own
     public Trainer t1;
     public Trainer t2;
+    
 
     /**
      * Constructor for objects of class Battle
@@ -28,6 +29,10 @@ public class Battle
         
         System.out.println("The Battle between " + t1.name + " and " + t2.name + " has begun!");
         showParties();
+        
+    }
+    
+    public void turnSystem(Trainer t) {
         
     }
     

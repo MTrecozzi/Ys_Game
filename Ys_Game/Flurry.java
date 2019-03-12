@@ -18,6 +18,7 @@ public class Flurry extends Move
         name = "Flurry";
         type = "Ice";
         desc = "Sends a chilling barage of ice at the foe, dealing damage and reducing their speed.";
+        category = "Physical";
      
     }
     
